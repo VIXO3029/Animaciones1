@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circle{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 150px; 
+    height: 150px;
+    background: cornflowerblue; 
+    border-radius: 50%;
+
+    /* animation */
+
+    animation-name: mianimacion; 
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-delay: 2.5s;
+     animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);  
+    /* animation: alternate infinite mianimacion 1s 2s; */
+} 
+
+.circle:hover {
+    animation-play-state: paused;
+}
+
+    @keyframes mianimacion {
+        0% {background: #aaa;transform: scale(1);}
+    
+        25% {background: yellow;transform: scale(1.3);}
+    
+        50% {background: green;transform: scale(1.5);}
+    
+        75% {background: red;transform: scale(.5);}
+    
+        100% {background: blue;transform: scale(1);}
+    }
+
+    /* @keyframes mianimacion {
+        0% {background: black;
+           transform: translate(0) ;}
+    
+        100% {background: blue;
+           transform: translateX(100%) translateY(100%) ;}
+    }
+ */
+
+
